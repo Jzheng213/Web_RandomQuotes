@@ -1,0 +1,41 @@
+body{
+	width: 600px
+	margin: 0px auto;
+
+}
+
+#intro h1{
+	font-size: 50px;
+	font-family: cursive;
+	text-shadow: 4px 4px #bbb;
+}
+
+#intro h2{
+	font-size: 15px;
+	font-family: cursive;
+	padding-bottom: 50px;
+}
+
+#btnNewQuote{
+	background-color: #9FF781;
+	font-family: cursive;
+	box-shadow: -5px 5px 10px #555;
+	margin-bottom: 20px;
+}
+
+#PanelQuote{
+	width: 600px;
+	box-shadow: -5px 5px 10px #555;
+	height: auto;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+#Quote{
+	font-size: 15px;
+	font-family: cursive;
+}
+
+#Author{
+	font-style: italic;
+}
