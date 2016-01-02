@@ -30,3 +30,31 @@ function generate(){
 	document.getElementById("Author").innerHTML = Ran_quote[1];
 }
 
+!function(d,s,id){
+	var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+	if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+	fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+function newBtnTwitter(){
+	var link = document.createElement('a');
+	link.setAttribute('href', 'https://twitter.com/share');
+	link.setAttribute('class', 'twitter-share-button');
+	link.setAttribute('style', 'margin-top:5px;');
+	link.setAttribute("data-text" , "I just achieved a score of on #2048Lagos a game where you find transport methods in lagos and score high." );
+	link.setAttribute("data-via" ,"denvycom") ;
+	link.setAttribute("data-size" ,"large") ;
+	this.lowermessageContainer.appendChild(link) ;
+	twttr.widgets.load();  //very important
+}
+
+twttr.widgets.createShareButton(
+  "https:\/\/dev.twitter.com\/web\/tweet-button",
+  document.getElementById("tweet-container"),
+  {
+    size: "large",
+    via: "twitterdev",
+    related: "twitterapi,twitter",
+    text: "custom share text",
+    hashtags: "example,demo"
+  }
+);
